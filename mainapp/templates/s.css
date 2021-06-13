@@ -1,0 +1,136 @@
+
+.layout {
+  padding-top: 100px;
+  background-color: #555;
+  display: grid; grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  
+}
+footer {
+grid-area: footer;
+background-color: var(--color-gray-0);
+border-top: 1px solid white;
+}
+
+.footer-top {
+padding-top: 10px;
+padding-bottom: 10px;
+display: flex;
+flex-direction: column;
+border-bottom: 1px solid var(--color-orange-2);
+}
+
+.subscribe {
+display: flex;
+flex-wrap: wrap;
+}
+
+.subscribe-title {
+display: flex;
+align-items: center;
+flex-grow: 1;
+}
+
+.subscribe-titletext {
+font-size: 1.1rem;
+}
+
+.subscribe-body {
+flex-grow: 1;
+flex-wrap: wrap;
+display: flex;
+}
+.subscribe-input {
+border-radius: var(--border-radius-default);
+background-color: var(--color-gray-6);
+padding: 0 10px;
+margin-right: 10px;
+font-size: 1.1rem;
+border: 3px solid transparent;
+min-width: 200px;
+flex-grow: 4;
+}
+.subscribe-input:focus {
+background-color: var(--color-white);
+}
+.subscribe-input._invalid-email {
+border-color: var(--color-red-0);
+}
+.subscribe-btn {
+padding: 3px 10px;
+flex-grow: 1;
+}
+
+.subscribe-btn[disabled] {
+color: gray;
+border-color: gray;
+background-color: var(--color-gray-0);
+cursor: not-allowed;
+}
+
+.footer-body {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 10px 0;
+}
+
+.footer-list {
+min-width: 200px;
+}
+
+.footer-list:last-child {
+margin-right: 0;
+}
+
+.footer-linkslink {
+color: var(--color-gray-6);
+}
+
+.links-item_footer {
+margin-bottom: 5px;
+}
+
+.linkslink_footer {
+color: white !important;
+}
+
+.linkslink_footer:hover {
+color: var(--color-cyan-1) !important;
+}
+
+.title_footer {
+font-size: 1.25rem;
+margin-bottom: 5px;
+}
+
+.footer-contacts {
+display: flex;
+flex-direction: column;
+}
+
+.contacts-number {
+margin-bottom: 10px;
+}
+
+.contacts-city {
+margin-bottom: 10px;
+}
+
+.contacts-ask-btn {
+padding: 5px 10px;
+}
+
+.contacts-social {
+display: flex;
+}
+
+.footer-links {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.skip{
+
+display: none;
+}
